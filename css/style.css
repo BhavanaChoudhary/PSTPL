@@ -1295,7 +1295,10 @@ header.header-fixed{
 .home-page-worldwide .world-map h1 {font-size: 26px; color: #c90030; margin: 0;font-family: 'Open Sans', sans-serif;}  
 .home-page-worldwide .world-map .map {color: #000;}
 .home-page-worldwide .logo {display: inline-block; width: 100%; text-align: center;margin-bottom: 20px;}
-.home-page-worldwide .logo img {width: auto;}
+.home-page-worldwide .logo img {
+  width: 150px;
+  height: auto;
+}
 .home-page-worldwide .yellow-content-red p {background: #ffcc00;font-size: 18px;font-family: 'Open Sans', sans-serif; padding: 12px 12px 17px;margin: 0;border-radius: 5px 5px 0 0;}  
 .home-page-worldwide .yellow-content-red h2 {background: #e6202a;  font-size: 22px;margin: 0;font-family: 'Open Sans', sans-serif; padding: 15px 13px; color: #fff; border-radius: 5px;margin-top: -5px;}
 .home-page-worldwide .yellow-content-red .yellow-lines{color: #ffcc00;}
