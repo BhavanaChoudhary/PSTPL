@@ -10,7 +10,250 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/ss2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-	
+	<style>
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background-color: #f5f5f5;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+        
+        .breadcrumb a {
+            color: #666;
+        }
+        
+        /* Contact Section */
+        .contact-us {
+            padding: 60px 0;
+        }
+        
+        .cont1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .cont1 h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #001d75;
+            margin-bottom: 20px;
+        }
+        
+        .cont1 p {
+            font-size: 20px;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .contact-form-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .contact-info {
+            background: #001d75;
+            color: #fff;
+            padding: 40px;
+            height: 100%;
+        }
+        
+        .contact-info h3 {
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 24px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .contact-info h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background: #00aced;
+        }
+        
+        .contact-info-item {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-info-icon {
+            margin-right: 20px;
+            font-size: 20px;
+            color: #00aced;
+        }
+        
+        .contact-info-content h4 {
+            color: #fff;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        .contact-info-content p, 
+        .contact-info-content a {
+            color: rgba(255,255,255,0.8);
+            margin: 0;
+        }
+        
+        .contact-info-content a:hover {
+            color: #fff;
+        }
+        
+        .contact-form {
+            padding: 40px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: #001d75;
+            box-shadow: 0 0 0 0.2rem rgba(0,29,117,0.25);
+            outline: none;
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submitBtn {
+            background: #001d75;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submitBtn:hover {
+            background: #0033cc;
+        }
+        
+        .map-container {
+            height: 400px;
+            margin-top: 60px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        
+        
+        
+        .Address h6 {
+            color: #ccc;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .Address h2 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .Address p {
+            color: #999;
+            margin-bottom: 10px;
+        }
+        
+        .Address p b {
+            color: #fff;
+        }
+        
+        
+        
+        
+        /* Responsive Styles */
+        @media (max-width: 991px) {
+            .banner-caption h1 {
+                font-size: 36px;
+            }
+            
+            .contact-info,
+            .contact-form {
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .inner-banner {
+                height: 300px;
+            }
+            
+            .banner-caption h1 {
+                font-size: 28px;
+            }
+            
+            .cont1 h2 {
+                font-size: 28px;
+            }
+            
+            .cont1 p {
+                font-size: 16px;
+            }
+            
+            .contact-info {
+                padding: 30px 20px;
+            }
+            
+            .contact-form {
+                padding: 30px 20px;
+            }
+            
+            .footer-one h1 {
+                font-size: 20px;
+            }
+        }
+        
+        @media (max-width: 575px) {
+            .inner-banner {
+                height: 250px;
+            }
+            
+            .banner-caption h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            
+            .contact-info-item {
+                flex-direction: column;
+            }
+            
+            .contact-info-icon {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
    	<link rel="stylesheet" href="css/bootstrap.min_1.css">
    	<script src="js/jquery.min_1.js"></script>
@@ -39,7 +282,7 @@
 <meta name="twitter:description" content="Leading Manufacturer of Stainless Steel and Tubes">
 <meta name="twitter:image" content="https://www.venuspipes.com/vnsloadup/2023/07/brand-logo.png">
 		<script type="application/ld+json" class="aioseo-schema">
-"logo":"https:\/\/www.venuspipes.com\/#logo","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Monday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Tuesday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Wednesday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Thursday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Friday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Saturday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Sunday"],"opens":"09:00","closes":"17:00"}]},{"@type":"Organization","@id":"https:\/\/www.venuspipes.com\/#organization","name":"Venus Pipes and Tubes","description":"Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes","url":"https:\/\/www.venuspipes.com\/","logo":{"@type":"ImageObject","url":"https:\/\/www.venuspipes.com\/vnsloadup\/2023\/07\/brand-logo.png","@id":"https:\/\/www.venuspipes.com\/#organizationLogo","width":165,"height":56,"caption":"Brand"},"image":{"@id":"https:\/\/www.venuspipes.com\/#organizationLogo"}},{"@type":"WebPage","@id":"https:\/\/www.venuspipes.com\/#webpage","url":"https:\/\/www.venuspipes.com\/","name":"Home - Venus Pipes and Tubes","description":"Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.venuspipes.com\/#website"},"breadcrumb":{"@id":"https:\/\/www.venuspipes.com\/#breadcrumblist"},"datePublished":"2023-07-03T06:42:17+00:00","dateModified":"2025-04-28T07:47:21+00:00"},{"@type":"WebSite","@id":"https:\/\/www.venuspipes.com\/#website","url":"https:\/\/www.venuspipes.com\/","name":"Venus Pipes and Tubes","description":"Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes","inLanguage":"en-US","publisher":{"@id":"https:\/\/www.venuspipes.com\/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.venuspipes.com\/?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
+"logo":"images/logo.png","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Monday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Tuesday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Wednesday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Thursday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Friday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Saturday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Sunday"],"opens":"09:00","closes":"17:00"}]},{"@type":"Organization","@id":"#organization","name":"Patel Steel and Tubes","description":"Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes","url":"index.html","logo":{"@type":"ImageObject","url":"images/logo.png","@id":"#organizationLogo","width":165,"height":56,"caption":"Brand"},"image":{"@id":"#organizationLogo"}},{"@type":"WebPage","@id":"#webpage","url":"index.html","name":"Home - Patel Steel and Tubes","description":"Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes","inLanguage":"en-US","isPartOf":{"@id":"#website"},"breadcrumb":{"@id":"#breadcrumblist"},"datePublished":"2023-07-03T06:42:17+00:00","dateModified":"2025-04-28T07:47:21+00:00"},{"@type":"WebSite","@id":"#website","url":"index.html","name":"Patel Steel and Tubes","description":"Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes","inLanguage":"en-US","publisher":{"@id":"#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"index.html?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
 		</script>
 		<!-- All in One SEO Pro -->
 
@@ -206,20 +449,20 @@ var whp_local_data = {"add_url":"https:\/\/www.venuspipes.com\/wp-admin\/post-ne
             <a href="#">About Us</a>
             <ul class="sub-menu">
 <li class="menu-item"><a href="aboutus.html">Company</a></li>
-<li class="menu-item"><a href="global.html">Global Presence</a></li>
+                <li class="menu-item"><a href="global.html">Global Presence</a></li>
             </ul>
         </li>
 <li class="menu-item menu-item-has-children">
             <a href="#">Products</a>
             <ul class="sub-menu">
-				<li class="menu-item"><a href="fittings.html">Steel Fittings and Pipes</a></li>
-<li class="menu-item"><a href="heat-exchanger.html">Stainless Steel Heat Exchanger Tubes</a></li>
+                <li class="menu-item"><a href="fittings.html">Steel Fittings and Pipes</a></li>
+                <li class="menu-item"><a href="heat-exchanger.html">Stainless Steel Heat Exchanger Tubes</a></li>
                 <li class="menu-item"><a href="hydraulic-tubes.html">Stainless Steel Hydraulic Tubes</a></li>
 <li class="menu-item"><a href="seamless-pipes.html">Stainless Steel Seamless Pipes</a></li>
 <li class="menu-item"><a href="welded-pipes.html">Stainless Steel Welded Pipes</a></li>
 <li class="menu-item"><a href="lsaw.html">Stainless Steel LSAW Pipes</a></li>
-<!-- <li class="menu-item"><a href="#">Process Flowchart</a></li> -->
-<!-- <li class="menu-item"><a href="#">Packaging</a></li> -->
+<!-- <li class="menu-item"><a href="#">Process Flowchart</a></li>
+<li class="menu-item"><a href="#">Packaging</a></li> -->
             </ul>
         </li>
         <li class="menu-item">
@@ -253,193 +496,119 @@ var whp_local_data = {"add_url":"https:\/\/www.venuspipes.com\/wp-admin\/post-ne
    
 </script>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			<section class="inner-banner">
-				<img src="images/2x6-scaled.jpg">
-				<div class="banner-caption">
-					<h1>Stainless Steel LSAW Pipes</h1>
-				</div><!-- banner-caption -->
-			</section><!-- inner-banner -->	
-			<div class="breadcrumb">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<a href="index.html" rel="nofollow">Home</a>  »  Stainless Steel LSAW Pipes						</div><!-- col-md-12 -->
-					</div><!-- row -->
-				</div><!-- container -->
-			</div><!-- breadcrumb -->
-		
-			<section class="financials">
-				<div class="container">
-					<div class="event-list-page">
-						<div class="row">
-							<div class="col-md-3 col-sm-4 col-xs-12">
-								<aside class="asidebar">
-									<h3>Products</h3>
-									
-<aside class="sidebar">
-		<ul class="navMenus">
-			<li>
-			<a class="bellows-target" href="fittings.html">Steel Fittings and Pipes</a>
-		</li>
-			<li>
-			<a class="bellows-target" href="heat-exchanger.html">Stainless Steel High Precision & Heat Exchanger Tubes</a>
-		</li>
-			<li>
-			<a class="bellows-target" href="hydraulic-tubes.html">Stainless Steel Hydraulic & Instrumentation Tubes</a>
-		</li>
-			<li>
-			<a class="bellows-target" href="seamless-pipes.html">Stainless Steel Seamless Pipes</a>
-		</li>
-			<li>
-			<a class="bellows-target" href="welded-pipes.html">Stainless Steel Welded Pipes</a>
-		</li>
-			<li>
-			<a class="bellows-target" href="lsaw.html">Stainless Steel LSAW Pipes</a>
-		</li>
-		</ul>
-</aside><!-- sidebar -->
+ <main id="primary" class="site-main">
+            <section class="inner-banner">
+                <img src="images/bannerContact.jpg">
+                <div class="banner-caption">
+                    <h1>Contact Us</h1>
+                </div>
+            </section>
+            
+            <div class="breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="index.html" rel="nofollow">Home</a> » Contact us
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <section class="contact-us">
+                <div class="container">
+                    <div class="cont1">
+                        <h2>Get in Touch</h2>
+                        <p>Join our genuine partnership to experience an exceptional journey and witness the creation of the finest end product</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="contact-form-container">
+                                <div class="contact-form">
+                                    <form action="https://formspree.io/f/mgebzqyo" method="POST" class="contact-form-inline">
+                                        <input type="hidden" name="_subject" value="New Contact Form Submission from Patel Steel Website">
+                                        <input type="hidden" name="_replyto" value="bhavxchoudhary@gmail.com">
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Your Email Address" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="location" placeholder="Your Location" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <button type="submit" class="submitBtn">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <div class="contact-info">
+                                <h3 style="font-size: 28px;">Contact Information</h3>
+                                
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+        <h4 style="margin: 0; font-size: 20px; color: white;">Phone</h4>
+        <p style="margin: 5px 0;"><a href="tel:+919054805544" style="font-size: 12px; color: white; text-decoration: none;">+91 9054805544</a></p>
+      </div>
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+        <h4 style="margin: 0; font-size: 20px; color: white;">Email</h4>
+        <p style="margin: 5px 0; font-size: 12px;">
+          <strong>For Enquiry</strong> –<br>
+          <a href="mailto:pstpl@gmail.com" style="color: white; text-decoration: none;">pstpl@gmail.com</a>
+        </p>
+      </div>
 
-
-<script type="text/javascript">
-	jQuery(function ($) {
-	    $("ul.navMenus a")
-	        .click(function(e) {
-	            var link = $(this);
-
-	            var item = link.parent("li");
-	            
-	            if (item.hasClass("active")) {
-	                item.removeClass("active").children("a").removeClass("active");
-	            } else {
-	                item.addClass("active").children("a").addClass("active");
-	            }
-
-	            if (item.children("ul.navMenus").length > 0) {
-	                var href = link.attr("href");
-	                link.attr("href", "#");
-	                setTimeout(function () { 
-	                    link.attr("href", href);
-	                }, 300);
-	                e.preventDefault();
-	            }
-	        })
-	        .each(function() {
-	            var link = $(this);
-	            if (link.get(0).href === location.href) {
-	                link.addClass("active").parents("li").addClass("active");
-	                return false;
-	            }
-	        });
-	});
-
-</script>									
-								</aside>
-
-								<aside class="sidebar2">
-									<!-- <img src="images/brochure-imag.png"> -->
-									<div class="brochure-content">
-										<h4>.</h4>
-										<div class="brochure-tag">
-											<!-- <a href="https://www.venuspipes.com/downloads">Corporate Brochure</a> -->
-										</div><!-- brochure-tag -->
-									</div><!-- brochure-content -->
-								</aside>
-							</div><!-- col-md-3 -->
-							<div class="col-md-9 col-sm-8 col-xs-12">
-								<div class="event-box-main">
-																	
-									<h4 class="strong-title">Stainless Steel LSAW Pipes</h4>
-									<div class="event-image">
-										<img src="images/LSAW.jpg">
-									</div><!-- event-image -->									
-									<div class="cont">
-										<p><img fetchpriority="high" decoding="async" class="alignnone wp-image-1394 size-full" src="images/pipes.jpg" alt="Stainless Steel LSAW Pipes" width="1200" height="500" srcset="images/pipes.jpg 1200w, images/pipes-300x125.jpg 300w, images/pipes-1024x427.jpg 1024w, images/pipes-768x320.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px"></p>
-<p><!--
-
-
-<tr>
-
-
-<td>U-Tubes</td>
-
-
-
-
-<td>As per Customer’s Drawing, Developed length up to 36 Meter.</td>
-
-
-</tr>
-
-
---></p><table class="table">
-<tbody>
-<tr>
-<td>Outside Diameter Range</td>
-<td>8″ NB TO 56″ NB</td>
-</tr>
-<tr>
-<td>Wall Thickness Range</td>
-<td>4.0 mm to 50.0 mm</td>
-</tr>
-<tr>
-<td>Length</td>
-<td>As per Requirement. Maximum up to 12 Meter long.</td>
-</tr>
-
-<tr>
-<td>Grades</td>
-<td>304/L/H/LN, 316/L/H/LN/Ti, 309, 310/L/H/S, 317/L/H, 321/H, 347/H, 904/L, UNS S31500, UNS S31803, UNS S2205, UNS S32750, UNS S32760</td>
-</tr>
-<tr>
-<td>Specification</td>
-<td>ASTM A-358, A-409, A-778, A-928</td>
-</tr>
-<tr>
-<td>Supply Condition</td>
-<td>Solution-Annealed, pickled and passivated.</td>
-</tr>
-</tbody>
-</table>
-									</div>
-																<h4>Applications</h4>
-								<div class="applications">
-																		<ul>
-																				<li>
-											<img src="images/Onshore-and-Offshore-Oil.png">
-											<p>Onshore and Offshore Oil and Gas Production, Exploration and Transport (OCTG – Oil Country Tubular Goods)</p>
-										</li>
-																				<li>
-											<img src="images/Chemical-and-Fertilizer.png">
-											<p>Chemical & Petrochemical</p>
-										</li>
-																				<li>
-											<img src="images/Power.png">
-											<p>Energy and Power Generation</p>
-										</li>
-																				<li>
-											<img src="images/Mechanical-and-Plant-Engineering.png">
-											<p>Mechanical and Plant Engineering</p>
-										</li>
-																				<li>
-											<img src="images/Water-and-Waste-Water-Management.png">
-											<p>Water and Waste Water Management</p>
-										</li>
-																			</ul>
-																	</div><!-- applications -->
-
-								</div><!-- event-detail-page -->
-
-							</div><!-- col-9 -->
-						</div><!-- row -->
-					</div><!-- main-page -->
-				</div><!-- container -->
-			</section>
-		
-		</main><!-- #main -->
-	</div><!-- #primary -->
+                                </div>
+                                
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+        <h4 style="margin: 0; font-size: 20px; color: white;">Patel Steel And Tubes Private Limited</h4>
+        <p style="margin: 5px 0; font-size: 12px; color: white;">
+          No. 33 SF, 36/1 36/2<br>
+          Abhishek Complex GIDC, Vadsar Road, Makarpura GIDC<br>
+          Vadodara, Gujarat, India - 390010
+        </p>
+      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps?q=No.33%20SF,%2036/1%2036/2%20Abhishek%20Complex%20GIDC,%20Vadsar%20Road,%20Makarpura%20GIDC,%20Vadodara,%20Gujarat,%20India%20-%20390010&output=embed" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
 <footer id="colophon" class="site-footer" style="background-color: #000; color: #fff; padding: 40px 0;">
   <div class="site-info">
     <div class="footer-one">
@@ -500,7 +669,7 @@ var whp_local_data = {"add_url":"https:\/\/www.venuspipes.com\/wp-admin\/post-ne
               <!-- Navigation -->
 <nav style="margin-top: 30px;">
                 <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 20px;">
-                   <li><a href="index.html" style="color: #fff;">Home</a></li>
+                  <li><a href="index.html" style="color: #fff;">Home</a></li>
 <li><a href="aboutus.html" style="color: #fff;">About Us</a></li>
 <li><a href="global.html" style="color: #fff;">Global Presence</a></li>
                   <li><a href="fittings.html" style="color: #fff;">Product</a></li>
@@ -594,7 +763,7 @@ var whp_local_data = {"add_url":"https:\/\/www.venuspipes.com\/wp-admin\/post-ne
       <span class="hamburger-inner"></span>
     </span>
   </div>
-<div class="menu_title">
+  <div class="menu_title">
       <a href="index.html">
       MENU    </a>
       </div>
@@ -612,19 +781,19 @@ var whp_local_data = {"add_url":"https:\/\/www.venuspipes.com\/wp-admin\/post-ne
         </li>
         <li class="menu-item menu-item-has-children">
             <a href="#">Products</a>
-    <ul class="sub-menu">
-		<li class="menu-item"><a href="fittings.html">Steel Fittings and Pipes</a></li>
-      <li class="menu-item"><a href="heat-exchanger.html">Stainless Steel Heat Exchanger Tubes</a></li>
-      <li class="menu-item"><a href="hydraulic-tubes.html">Stainless Steel Hydraulic Tubes</a></li>
+            <ul class="sub-menu">
+                <li class="menu-item"><a href="fittings.html">Steel Fittings and Pipes</a></li>
+                <li class="menu-item"><a href="heat-exchanger.html">Stainless Steel Tubes</a></li>
+                <li class="menu-item"><a href="hydraulic-tubes.html">Stainless Steel Hydraulic Tubes</a></li>
 <li class="menu-item"><a href="seamless-pipes.html">Stainless Steel Seamless Pipes</a></li>
 <li class="menu-item"><a href="welded-pipes.html">Stainless Steel Welded Pipes</a></li>
 <li class="menu-item"><a href="lsaw.html">Stainless Steel LSAW Pipes</a></li>
 <!-- <li class="menu-item"><a href="#">Process Flowchart</a></li>
 <li class="menu-item"><a href="#">Packaging</a></li> -->
-    </ul>
+            </ul>
   </li>
   <li class="menu-item">
-    <a href="#">Contact Us</a>
+    <a href="contactus.html">Contact Us</a>
   </li>
 </ul>
 				
