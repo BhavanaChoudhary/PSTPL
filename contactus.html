@@ -1,851 +1,302 @@
-<!DOCTYPE html><html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#"><head>
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="https://www.venuspipes.com/vnstheme/favicon.jpg" sizes="32x32">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">	
+
+	<link rel="icon" href="images/logo.png" sizes="32x32">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/ss2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+	<script src="js/jquery.min_1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<title>Contact Us - Patel Enterprises</title>
+
 	<style>
-        
-        /* Breadcrumb */
-        .breadcrumb {
-            background-color: #f5f5f5;
-            padding: 15px 0;
-            font-size: 14px;
-        }
-        
-        .breadcrumb a {
-            color: #666;
-        }
-        
-        /* Contact Section */
-        .contact-us {
-            padding: 60px 0;
-        }
-        
-        .cont1 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .cont1 h2 {
-            font-size: 36px;
-            font-weight: 700;
-            color: #001d75;
-            margin-bottom: 20px;
-        }
-        
-        .cont1 p {
-            font-size: 20px;
-            color: #333;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-        
-        .contact-form-container {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 30px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        
-        .contact-info {
-            background: #001d75;
-            color: #fff;
-            padding: 40px;
-            height: 100%;
-        }
-        
-        .contact-info h3 {
-            color: #fff;
-            margin-bottom: 30px;
-            font-size: 24px;
-            position: relative;
-            padding-bottom: 15px;
-        }
-        
-        .contact-info h3:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 3px;
-            background: #00aced;
-        }
-        
-        .contact-info-item {
-            margin-bottom: 25px;
-            display: flex;
-            align-items: flex-start;
-        }
-        
-        .contact-info-icon {
-            margin-right: 20px;
-            font-size: 20px;
-            color: #00aced;
-        }
-        
-        .contact-info-content h4 {
-            color: #fff;
-            margin-bottom: 5px;
-            font-size: 18px;
-        }
-        
-        .contact-info-content p, 
-        .contact-info-content a {
-            color: rgba(255,255,255,0.8);
-            margin: 0;
-        }
-        
-        .contact-info-content a:hover {
-            color: #fff;
-        }
-        
-        .contact-form {
-            padding: 40px;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-        
-        .form-control:focus {
-            border-color: #001d75;
-            box-shadow: 0 0 0 0.2rem rgba(0,29,117,0.25);
-            outline: none;
-        }
-        
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
-        
-        .submitBtn {
-            background: #001d75;
-            color: #fff;
-            border: none;
-            padding: 12px 30px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .submitBtn:hover {
-            background: #0033cc;
-        }
-        
-        .map-container {
-            height: 400px;
-            margin-top: 60px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 0 30px rgba(0,0,0,0.1);
-        }
-        
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        
-        
-        
-        .Address h6 {
-            color: #ccc;
-            font-size: 14px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-        
-        .Address h2 {
-            color: #fff;
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-        
-        .Address p {
-            color: #999;
-            margin-bottom: 10px;
-        }
-        
-        .Address p b {
-            color: #fff;
-        }
-        
-        
-        
-        
-        /* Responsive Styles */
-        @media (max-width: 991px) {
-            .banner-caption h1 {
-                font-size: 36px;
-            }
-            
-            .contact-info,
-            .contact-form {
-                padding: 30px;
-            }
-        }
-        
-        @media (max-width: 767px) {
-            .inner-banner {
-                height: 300px;
-            }
-            
-            .banner-caption h1 {
-                font-size: 28px;
-            }
-            
-            .cont1 h2 {
-                font-size: 28px;
-            }
-            
-            .cont1 p {
-                font-size: 16px;
-            }
-            
-            .contact-info {
-                padding: 30px 20px;
-            }
-            
-            .contact-form {
-                padding: 30px 20px;
-            }
-            
-            .footer-one h1 {
-                font-size: 20px;
-            }
-        }
-        
-        @media (max-width: 575px) {
-            .inner-banner {
-                height: 250px;
-            }
-            
-            .banner-caption h1 {
-                font-size: 24px;
-                margin-bottom: 10px;
-            }
-            
-            .contact-info-item {
-                flex-direction: column;
-            }
-            
-            .contact-info-icon {
-                margin-bottom: 10px;
-            }
-        }
-    </style>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-   	<link rel="stylesheet" href="css/bootstrap.min_1.css">
-   	<script src="js/jquery.min_1.js"></script>
-   	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   	 -->
-   	<script src="js/bootstrap.min.js"></script>   	
-   	<script src="js/owl.carousel.js"></script>
-<title>Home - Patel Steel and Tubes </title>
+		/* Banner */
+		.inner-banner {
+			width: 100%;
+			height: 430px;
+			background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMyENgKv0-TZetnMVA_7ECz5AoAH2jt3SxDTGxaqTeL2D-LRF-4lQKj7408Gy6CJLOEHc&usqp=CAU');
 
-		<!-- All in One SEO Pro 4.7.7 - aioseo.com -->
-	<meta name="description" content="Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes">
-	<meta name="robots" content="max-image-preview:large">
-	<link rel="canonical" href="index.html">
-	<meta name="generator" content="All in One SEO Pro (AIOSEO) 4.7.7">
-		<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Patel Steel and Tubes - Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes">
-		<meta property="og:type" content="article">
-<meta property="og:title" content="Home - Patel Steel and Tubes">
-		<meta property="og:description" content="Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes">
-		<meta property="og:url" content="index.html">
-		<meta property="og:image" content="images/logo.png">
-		<meta property="og:image:secure_url" content="images/logo.png">
-		<meta property="article:published_time" content="2023-07-03T06:42:17+00:00">
-		<meta property="article:modified_time" content="2025-04-28T07:47:21+00:00">
-		<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Home - Patel Steel and Tubes">
-<meta name="twitter:description" content="Leading Manufacturer of Stainless Steel and Tubes">
-<meta name="twitter:image" content="https://www.venuspipes.com/vnsloadup/2023/07/brand-logo.png">
-		<script type="application/ld+json" class="aioseo-schema">
-"logo":"images/logo.png","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Monday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Tuesday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Wednesday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Thursday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Friday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Saturday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["https:\/\/schema.org\/Sunday"],"opens":"09:00","closes":"17:00"}]},{"@type":"Organization","@id":"#organization","name":"Patel Steel and Tubes","description":"Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes","url":"index.html","logo":{"@type":"ImageObject","url":"images/logo.png","@id":"#organizationLogo","width":165,"height":56,"caption":"Brand"},"image":{"@id":"#organizationLogo"}},{"@type":"WebPage","@id":"#webpage","url":"index.html","name":"Home - Patel Steel and Tubes","description":"Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes","inLanguage":"en-US","isPartOf":{"@id":"#website"},"breadcrumb":{"@id":"#breadcrumblist"},"datePublished":"2023-07-03T06:42:17+00:00","dateModified":"2025-04-28T07:47:21+00:00"},{"@type":"WebSite","@id":"#website","url":"index.html","name":"Patel Steel and Tubes","description":"Leading Manufacturer of Stainless Steel Seamless and Welded Pipes and Tubes","inLanguage":"en-US","publisher":{"@id":"#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"index.html?s={search_term_string}"},"query-input":"required name=search_term_string"}}]}
-		</script>
-		<!-- All in One SEO Pro -->
+			background-size: cover;
+			background-position: center;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
-<link rel="alternate" type="application/rss+xml" title="Venus Pipes and Tubes » Feed" href="https://www.venuspipes.com/feed/">
-<link rel="alternate" type="application/rss+xml" title="Venus Pipes and Tubes » Comments Feed" href="https://www.venuspipes.com/comments/feed/">
-<script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.venuspipes.com\/vnsinclude\/js\/wp-emoji-release.min.js"}};
-/*! This file is auto-generated */
-!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0;i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
-</script>
-<style id="wp-emoji-styles-inline-css">
+		.banner-caption h1 {
+			color: white;
+			font-size: 48px;
+			font-weight: 700;
+			text-shadow: 0px 2px 10px rgba(0,0,0,0.6);
+		}
 
-	img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
-	}
-</style>
-<style id="outermost-social-sharing-style-inline-css">
-.wp-block-outermost-social-sharing{align-items:flex-start;background:none;box-sizing:border-box;margin-left:0;padding-left:0;padding-right:0;text-indent:0}.wp-block-outermost-social-sharing .outermost-social-sharing-link a,.wp-block-outermost-social-sharing .outermost-social-sharing-link a:hover{border-bottom:0;box-shadow:none;text-decoration:none}.wp-block-outermost-social-sharing .outermost-social-sharing-link a{padding:.25em}.wp-block-outermost-social-sharing .outermost-social-sharing-link svg{height:1em;width:1em}.wp-block-outermost-social-sharing .outermost-social-sharing-link span:not(.screen-reader-text){font-size:.65em;margin-left:.5em;margin-right:.5em}.wp-block-outermost-social-sharing.has-small-icon-size{font-size:16px}.wp-block-outermost-social-sharing,.wp-block-outermost-social-sharing.has-normal-icon-size{font-size:24px}.wp-block-outermost-social-sharing.has-large-icon-size{font-size:36px}.wp-block-outermost-social-sharing.has-huge-icon-size{font-size:48px}.wp-block-outermost-social-sharing.aligncenter{display:flex;justify-content:center}.wp-block-outermost-social-sharing.alignright{justify-content:flex-end}.wp-block-outermost-social-sharing-link{border-radius:9999px;display:block;height:auto;transition:transform .1s ease}.wp-block-outermost-social-sharing-link a{align-items:center;display:flex;line-height:0;transition:transform .1s ease}.wp-block-outermost-social-sharing-link:hover{transform:scale(1.1)}.wp-block-outermost-social-sharing .wp-block-outermost-social-sharing-link .wp-block-outermost-social-sharing-link-anchor,.wp-block-outermost-social-sharing .wp-block-outermost-social-sharing-link .wp-block-outermost-social-sharing-link-anchor svg,.wp-block-outermost-social-sharing .wp-block-outermost-social-sharing-link .wp-block-outermost-social-sharing-link-anchor:active,.wp-block-outermost-social-sharing .wp-block-outermost-social-sharing-link .wp-block-outermost-social-sharing-link-anchor:hover,.wp-block-outermost-social-sharing .wp-block-outermost-social-sharing-link .wp-block-outermost-social-sharing-link-anchor:visited{color:currentColor;fill:currentColor}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link{background-color:#f0f0f0;color:#444}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-bluesky{background-color:#1083fe;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-facebook{background-color:#1877f2;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-flipboard{background-color:#e12828;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-line{background-color:#06c755;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-linkedin{background-color:#0a66c2;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-pinterest{background-color:#bd081c;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-pocket{background-color:#ef4056;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-reddit{background-color:#ff4500;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-skype{background-color:#0078ca;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-telegram{background-color:#229ed9;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-threads{background-color:#000;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-tumblr{background-color:#011935;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-viber{background-color:#665ca7;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-whatsapp{background-color:#25d366;color:#fff}.wp-block-outermost-social-sharing:not(.is-style-logos-only) .outermost-social-sharing-link-x{background-color:#000;color:#fff}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link{background:none}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link a{padding:0}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link svg{height:1.25em;width:1.25em}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link{color:#444}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-bluesky{color:#1083fe}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-facebook{color:#1877f2}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-flipboard{color:#e12828}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-line{color:#06c755}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-linkedin{color:#0a66c2}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-pinterest{color:#bd081c}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-pocket{color:#ef4056}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-reddit{color:#ff4500}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-skype{color:#0078ca}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-telegram{color:#229ed9}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-threads{color:#000}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-tumblr{color:#011935}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-twitter{color:#1da1f2}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-viber{color:#665ca7}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-whatsapp{color:#25d366}.wp-block-outermost-social-sharing.is-style-logos-only .outermost-social-sharing-link-x{color:#000}.wp-block-outermost-social-sharing.is-style-pill-shape .outermost-social-sharing-link{width:auto}.wp-block-outermost-social-sharing.is-style-pill-shape .outermost-social-sharing-link a{padding-left:.6666666667em;padding-right:.6666666667em}.wp-block-post-template.is-flex-container .wp-block-outermost-social-sharing li{width:auto}
+		/* Contact Section */
+		.contact-section {
+			padding: 60px 0;
+		}
 
-</style>
-<style id="classic-theme-styles-inline-css">
-/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id="global-styles-inline-css">
-:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" media="all">
-<link rel="stylesheet" id="wpm-main-css" href="css/main.min.css" media="all">
-<link rel="stylesheet" id="hamburger.css-css" href="css/wpr-hamburger.css" media="all">
-<link rel="stylesheet" id="wprmenu.css-css" href="css/wprmenu.css" media="all">
-<style id="wprmenu.css-inline-css">
-@media only screen and ( max-width: 768px ) {html body div.wprm-wrapper {overflow: scroll;}html body div.wprm-overlay{ background: rgb(0,0,0) }#wprmenu_bar {background-image: url();background-size: cover ;background-repeat: repeat;}#wprmenu_bar {background-color: #294393;}html body div#mg-wprm-wrap .wpr_submit .icon.icon-search {color: #ffffff;}#wprmenu_bar .menu_title,#wprmenu_bar .wprmenu_icon_menu,#wprmenu_bar .menu_title a {color: #ffffff;}#wprmenu_bar .menu_title a {font-size: 20px;font-weight: normal;}#mg-wprm-wrap li.menu-item a {font-size: 15px;text-transform: uppercase;font-weight: normal;}#mg-wprm-wrap li.menu-item-has-children ul.sub-menu a {font-size: 15px;text-transform: uppercase;font-weight: normal;}#mg-wprm-wrap li.current-menu-item > a {background: #103193;}#mg-wprm-wrap li.current-menu-item > a,#mg-wprm-wrap li.current-menu-item span.wprmenu_icon{color: #ffffff !important;}#mg-wprm-wrap {background-color: #425693;}.cbp-spmenu-push-toright,.cbp-spmenu-push-toright .mm-slideout {left: 80% ;}.cbp-spmenu-push-toleft {left: -80% ;}#mg-wprm-wrap.cbp-spmenu-right,#mg-wprm-wrap.cbp-spmenu-left,#mg-wprm-wrap.cbp-spmenu-right.custom,#mg-wprm-wrap.cbp-spmenu-left.custom,.cbp-spmenu-vertical {width: 80%;max-width: 400px;}#mg-wprm-wrap ul#wprmenu_menu_ul li.menu-item a,div#mg-wprm-wrap ul li span.wprmenu_icon {color: #ffffff;}#mg-wprm-wrap ul#wprmenu_menu_ul li.menu-item:valid ~ a{color: #ffffff;}#mg-wprm-wrap ul#wprmenu_menu_ul li.menu-item a:hover {background: #486093;color: #ffffff !important;}div#mg-wprm-wrap ul>li:hover>span.wprmenu_icon {color: #ffffff !important;}.wprmenu_bar .hamburger-inner,.wprmenu_bar .hamburger-inner::before,.wprmenu_bar .hamburger-inner::after {background: #ffffff;}.wprmenu_bar .hamburger:hover .hamburger-inner,.wprmenu_bar .hamburger:hover .hamburger-inner::before,.wprmenu_bar .hamburger:hover .hamburger-inner::after {background: #ffffff;}div.wprmenu_bar div.hamburger{padding-right: 6px !important;}#wprmenu_menu.left {width:80%;left: -80%;right: auto;}#wprmenu_menu.right {width:80%;right: -80%;left: auto;}html body div#wprmenu_bar {height : 42px;}#mg-wprm-wrap.cbp-spmenu-left,#mg-wprm-wrap.cbp-spmenu-right,#mg-widgetmenu-wrap.cbp-spmenu-widget-left,#mg-widgetmenu-wrap.cbp-spmenu-widget-right {top: 42px !important;}.wprmenu_bar .hamburger {float: left;}.wprmenu_bar #custom_menu_icon.hamburger {top: px;left: px;float: left !important;background-color: #cccccc;}.wpr_custom_menu #custom_menu_icon {display: block;}html { padding-top: 42px !important; }#wprmenu_bar,#mg-wprm-wrap { display: block; }div#wpadminbar { position: fixed; }}
-</style>
-<link rel="stylesheet" id="wpr_icons-css" href="css/wpr-icons.css" media="all">
-<link rel="stylesheet" id="venus-pipes-style-css" href="css/style.css" media="all">
-<link rel="stylesheet" id="elementor-frontend-css" href="css/frontend.min.css" media="all">
-<link rel="stylesheet" id="elementor-post-1977-css" href="css/post-1977.css" media="all">
-<link rel="stylesheet" id="bellows-css" href="css/bellows.min.css" media="all">
-<link rel="stylesheet" id="bellows-font-awesome-css" href="css/font-awesome.min_2.css" media="all">
-<link rel="stylesheet" id="bellows-blue-material-css" href="css/blue-material.css" media="all">
-<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap" media="all">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script src="js/jquery.min.js" id="jquery-core-js"></script>
-<script src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-<script src="js/devtools-detect.js" id="devtools-detect-js"></script>
-<script src="js/jquery.nicescroll.min.js" id="ppm-customscrollbar-js-js"></script>
-<script id="3d-flip-book-client-locale-loader-js-extra">
-var FB3D_CLIENT_LOCALE = {"ajaxurl":"https:\/\/www.venuspipes.com\/wp-admin\/admin-ajax.php","dictionary":{"Table of contents":"Table of contents","Close":"Close","Bookmarks":"Bookmarks","Thumbnails":"Thumbnails","Search":"Search","Share":"Share","Facebook":"Facebook","Twitter":"Twitter","Email":"Email","Play":"Play","Previous page":"Previous page","Next page":"Next page","Zoom in":"Zoom in","Zoom out":"Zoom out","Fit view":"Fit view","Auto play":"Auto play","Full screen":"Full screen","More":"More","Smart pan":"Smart pan","Single page":"Single page","Sounds":"Sounds","Stats":"Stats","Print":"Print","Download":"Download","Goto first page":"Goto first page","Goto last page":"Goto last page"},"images":"https:\/\/www.venuspipes.com\/vnsplug\/interactive-3d-flipbook-powered-physics-engine\/assets\/images\/","jsData":{"urls":[],"posts":{"ids_mis":[],"ids":[]},"pages":[],"firstPages":[],"bookCtrlProps":[],"bookTemplates":[]},"key":"3d-flip-book","pdfJS":{"pdfJsLib":"https:\/\/www.venuspipes.com\/vnsplug\/interactive-3d-flipbook-powered-physics-engine\/assets\/js\/pdf.min.js?ver=4.3.136","pdfJsWorker":"https:\/\/www.venuspipes.com\/vnsplug\/interactive-3d-flipbook-powered-physics-engine\/assets\/js\/pdf.worker.js?ver=4.3.136","stablePdfJsLib":"https:\/\/www.venuspipes.com\/vnsplug\/interactive-3d-flipbook-powered-physics-engine\/assets\/js\/stable\/pdf.min.js?ver=2.5.207","stablePdfJsWorker":"https:\/\/www.venuspipes.com\/vnsplug\/interactive-3d-flipbook-powered-physics-engine\/assets\/js\/stable\/pdf.worker.js?ver=2.5.207","pdfJsCMapUrl":"https:\/\/www.venuspipes.com\/vnsplug\/interactive-3d-flipbook-powered-physics-engine\/assets\/cmaps\/"},"cacheurl":"https:\/\/www.venuspipes.com\/vnsloadup\/3d-flip-book\/cache\/","pluginsurl":"https:\/\/www.venuspipes.com\/vnsplug\/","pluginurl":"https:\/\/www.venuspipes.com\/vnsplug\/interactive-3d-flipbook-powered-physics-engine\/","thumbnailSize":{"width":"150","height":"150"},"version":"1.16.14"};
-</script>
-<script src="js/client-locale-loader.js" id="3d-flip-book-client-locale-loader-js" async="" data-wp-strategy="async"></script>
-<script src="js/modernizr.custom.js" id="modernizr-js"></script>
-<script src="js/touchSwipe.js" id="touchSwipe-js"></script>
-<script id="wprmenu.js-js-extra">
-var wprmenu = {"zooming":"","from_width":"768","push_width":"400","menu_width":"80","parent_click":"","swipe":"","enable_overlay":"1","wprmenuDemoId":""};
-</script>
-<script src="js/wprmenu.js" id="wprmenu.js-js"></script>
-<script id="wpso-front-scripts-js-extra">
-var wpso = {"ajaxurl":"https:\/\/www.venuspipes.com\/wp-admin\/admin-ajax.php","nonce":"db74a7ad4f","user_items":[]};
-</script>
-<script src="js/front-scripts.js" id="wpso-front-scripts-js"></script>
-<script id="whp9854front.js9454-js-extra">
-var whp_local_data = {"add_url":"https:\/\/www.venuspipes.com\/wp-admin\/post-new.php?post_type=event","ajaxurl":"https:\/\/www.venuspipes.com\/wp-admin\/admin-ajax.php"};
-</script>
-<script src="js/front.js" id="whp9854front.js9454-js"></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.venuspipes.com/xmlrpc.php?rsd">
+		.contact-box {
+			background: #f8f9fa;
+			padding: 30px;
+			border-radius: 8px;
+		}
 
-<link rel="shortlink" href="index.html">
+		.success-popup {
+			display: none;
+			background: #28a745;
+			color: white;
+			padding: 15px;
+			text-align: center;
+			border-radius: 6px;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
 
-<style id="bellows-custom-generated-css">
-/* Status: Loaded from Transient */
+		iframe {
+			width: 100%;
+			height: 400px;
+			border: none;
+			border-radius: 8px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
 
-</style><link rel="alternate" hreflang="x-default" href="index.html">
-<link rel="alternate" hreflang="en-us" href="index.html">
-<meta name="generator" content="Elementor 3.26.3; features: e_font_icon_svg, additional_custom_breakpoints, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
-			<style>
-				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
-				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
-					background-image: none !important;
-				}
-				@media screen and (max-height: 1024px) {
-					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
-					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
-						background-image: none !important;
-					}
-				}
-				@media screen and (max-height: 640px) {
-					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
-					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
-						background-image: none !important;
-					}
-				}
-			</style>
-<link rel="icon" href="images/cropped-icon-512x512-1-32x32.jpg" sizes="32x32">
-<link rel="icon" href="images/cropped-icon-512x512-1-192x192.jpg" sizes="192x192">
-<link rel="apple-touch-icon" href="images/cropped-icon-512x512-1-180x180.jpg">
-<meta name="msapplication-TileImage" content="https://www.venuspipes.com/vnsloadup/2024/09/cropped-icon-512x512-1-270x270.jpg">
-	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9RJDMCQHH7"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9RJDMCQHH7'); </script>
-<script src="js/wp-emoji-release.min.js" defer=""></script></head>
+<body>
 
-<body class="home page-template page-template-page-template page-template-temp-home page-template-page-templatetemp-home-php page page-id-11 wp-custom-logo language-en elementor-default elementor-kit-1977 elementor-page elementor-page-11">
-
-<div id="page" class="site">
-	<!-- <a class="skip-link screen-reader-text" href="#primary">Skip to content</a> -->
-
-	<header id="masthead" class="site-header home-header">    
+<!-- KEEP YOUR HEADER EXACTLY SAME -->
+<header id="masthead" class="site-header home-header">
 
 	<div class="topheader">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="site-branding">						
-<ul>
-  <li>
-<img width="165" height="56" src="images/logo.png" class="custom-logo" alt="Brand" decoding="async">
-  </li>
-</ul>
+					<div class="site-branding">
+						<ul><li><img width="165" height="56" src="images/logo.png" class="custom-logo" alt="Brand"></li></ul>
 					</div>
 				</div>
+
 				<div class="col-md-8">
 					<div class="main-icon">
 						<div class="social-icon">
 							<ul>
 								<li><p class="tagline">#Redefining<strong>Endurance</strong></p></li>
-								<li>
-<a href="#"><img src="images/3.png"></a>
-</li>
-<li>
-<a href="#"><img src="images/4.png"></a>
-</li>
-<li>
-<a href="#"><img src="images/1.png"></a>
-</li>
-<li>
-<a href="#"><i class="fa fa-twitter" style="color: #fff;font-size: 22px;"></i></a>
-</li>
-<li>
-<a href="#"><img src="images/2.png"></a>
-</li>
-								<li>
-									<div class="image-icon">
-										<img src="images/Layer%2016.png">psptl@gmail.com									</div>									
-								</li>
-								<li>
-									<div class="image-icon">
-										<img src="images/Layer%2017.png">+91 9054805544									</div>
-								</li>
-							</ul>	
+								<li><a href="#"><img src="images/3.png"></a></li>
+								<li><a href="#"><img src="images/4.png"></a></li>
+								<li><a href="#"><img src="images/1.png"></a></li>
+								<li><a href="#"><i class="fa fa-twitter" style="color:#fff;font-size:22px;"></i></a></li>
+								<li><a href="#"><img src="images/2.png"></a></li>
+								<li><div class="image-icon"><img src="images/Layer 16.png">patelenterprises023@gmail.com</div></li>
+								<li><div class="image-icon"><img src="images/Layer 17.png">+91 9739999023</div></li>
+							</ul>
 						</div>
 
-<nav id="site-navigation" class="main-navigation">
-    <ul>
-        <li class="menu-item menu-item-has-children">
-            <a href="#">About Us</a>
-            <ul class="sub-menu">
-<li class="menu-item"><a href="aboutus.html">Company</a></li>
-                <li class="menu-item"><a href="global.html">Global Presence</a></li>
-            </ul>
-        </li>
-<li class="menu-item menu-item-has-children">
-            <a href="#">Products</a>
-            <ul class="sub-menu">
-                <li class="menu-item"><a href="fittings.html">Steel Fittings and Pipes</a></li>
-                <li class="menu-item"><a href="heat-exchanger.html">Stainless Steel Heat Exchanger Tubes</a></li>
-                <li class="menu-item"><a href="hydraulic-tubes.html">Stainless Steel Hydraulic Tubes</a></li>
-<li class="menu-item"><a href="seamless-pipes.html">Stainless Steel Seamless Pipes</a></li>
-<li class="menu-item"><a href="welded-pipes.html">Stainless Steel Welded Pipes</a></li>
-<li class="menu-item"><a href="lsaw.html">Stainless Steel LSAW Pipes</a></li>
-<!-- <li class="menu-item"><a href="#">Process Flowchart</a></li>
-<li class="menu-item"><a href="#">Packaging</a></li> -->
-            </ul>
-        </li>
-        <li class="menu-item">
-            <a href="#">Contact Us</a>
-        </li>
-    </ul>
-</nav><!-- #site-navigation -->						
-					</div>	
-				</div>	
-			</div>	
+						<nav id="site-navigation" class="main-navigation">
+							<ul>
+								<li class="menu-item menu-item-has-children">
+									<a href="#">About Us</a>
+									<ul class="sub-menu">
+										<li><a href="aboutus.html">Company</a></li>
+										<li><a href="global.html">Global Presence</a></li>
+									</ul>
+								</li>
+								<li class="menu-item menu-item-has-children">
+									<a href="#">Products</a>
+									<ul class="sub-menu">
+										<li><a href="fittings.html">Steel Fittings</a></li>
+										<li><a href="heat-exchanger.html">Heat Exchanger Tubes</a></li>
+										<li><a href="hydraulic-tubes.html">Hydraulic Tubes</a></li>
+										<li><a href="seamless-pipes.html">Seamless Pipes</a></li>
+										<li><a href="welded-pipes.html">Welded Pipes</a></li>
+										<li><a href="lsaw.html">LSAW Pipes</a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="contactus.html">Contact Us</a></li>
+							</ul>
+						</nav>
+
+					</div>
+				</div>
+
+			</div>
 		</div>
-	</div>	
-</header><!-- #masthead -->
+	</div>
 
-<script type="text/javascript">
-	
-          	$(function(){
-          		var fixedheader = $('.site-header');
-          		
+</header>
 
-          		$(window).scroll(function(){
-          			var scroll = $(window).scrollTop();
-          			if(scroll >=44){
-          				fixedheader.addClass('header-fixed')
+<!-- Banner -->
+<section class="inner-banner">
+	<div class="banner-caption">
+		<h1>Contact Us</h1>
+	</div>
+</section>
 
-          			}else{
-          				fixedheader.removeClass('header-fixed');
-          			}
-          		});
-          	});
-   
-</script>
+<!-- Contact Section -->
+<section class="contact-section">
+	<div class="container">
 
- <main id="primary" class="site-main">
-            <section class="inner-banner">
-                <img src="images/bannerContact.jpg">
-                <div class="banner-caption">
-                    <h1>Contact Us</h1>
-                </div>
-            </section>
-            
-            <div class="breadcrumb">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <a href="index.html" rel="nofollow">Home</a> » Contact us
-                        </div>
-                    </div>
-                </div>
-            </div>
+		<div id="successPopup" class="success-popup">Form submitted successfully!</div>
 
-            <section class="contact-us">
-                <div class="container">
-                    <div class="cont1">
-                        <h2>Get in Touch</h2>
-                        <p>Join our genuine partnership to experience an exceptional journey and witness the creation of the finest end product</p>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="contact-form-container">
-                                <div class="contact-form">
-                                    <form action="https://formspree.io/f/mgebzqyo" method="POST" class="contact-form-inline">
-                                        <input type="hidden" name="_subject" value="New Contact Form Submission from Patel Steel Website">
-                                        <input type="hidden" name="_replyto" value="bhavxchoudhary@gmail.com">
-                                        
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" placeholder="Your Email Address" required>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <input type="tel" class="form-control" name="phone" placeholder="Your Phone Number" required>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="location" placeholder="Your Location" required>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <button type="submit" class="submitBtn">Submit</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-6">
-                            <div class="contact-info">
-                                <h3 style="font-size: 28px;">Contact Information</h3>
-                                
-                                <div class="contact-info-item">
-                                    <div class="contact-info-icon">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <div class="contact-info-content">
-        <h4 style="margin: 0; font-size: 20px; color: white;">Phone</h4>
-        <p style="margin: 5px 0;"><a href="tel:+919054805544" style="font-size: 12px; color: white; text-decoration: none;">+91 9054805544</a></p>
-      </div>
-                                </div>
-                                
-                                <div class="contact-info-item">
-                                    <div class="contact-info-icon">
-                                        <i class="fa fa-envelope"></i>
-                                    </div>
-                                    <div class="contact-info-content">
-        <h4 style="margin: 0; font-size: 20px; color: white;">Email</h4>
-        <p style="margin: 5px 0; font-size: 12px;">
-          <strong>For Enquiry</strong> –<br>
-          <a href="mailto:pstpl@gmail.com" style="color: white; text-decoration: none;">pstpl@gmail.com</a>
-        </p>
-      </div>
+		<div class="row">
+			<!-- Form -->
+			<div class="col-md-6">
+				<div class="contact-box">
+					<h3>Send us a Message</h3>
 
-                                </div>
-                                
-                                <div class="contact-info-item">
-                                    <div class="contact-info-icon">
-                                        <i class="fa fa-map-marker"></i>
-                                    </div>
-                                    <div class="contact-info-content">
-        <h4 style="margin: 0; font-size: 20px; color: white;">Patel Steel And Tubes Private Limited</h4>
-        <p style="margin: 5px 0; font-size: 12px; color: white;">
-          No. 33 SF, 36/1 36/2<br>
-          Abhishek Complex GIDC, Vadsar Road, Makarpura GIDC<br>
-          Vadodara, Gujarat, India - 390010
-        </p>
-      </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps?q=No.33%20SF,%2036/1%2036/2%20Abhishek%20Complex%20GIDC,%20Vadsar%20Road,%20Makarpura%20GIDC,%20Vadodara,%20Gujarat,%20India%20-%20390010&output=embed" 
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </section>
-        </main>
-<footer id="colophon" class="site-footer" style="background-color: #000; color: #fff; padding: 40px 0;">
-  <div class="site-info">
-    <div class="footer-one">
-      <div class="container text-center">
-        <h1 style="color: #fff;">
-          Get in touch with us by filling up the form or email us at
-          <a class="request" href="#" style="color: #00aced; text-decoration: underline;">Request Quote</a>
-        </h1>
-      </div>
-    </div>
+					<form id="contactForm" action="https://formspree.io/f/xanrdven" method="POST">
 
-    <div class="footer-two">
-      <div class="container">
-        <div class="row">
-          <!-- Address Section -->
-          <div class="col-md-3">
-            <div class="Address">
-              <h6 style="color: #ccc;">REGISTERED OFFICE</h6>
-              <h2 style="color: #fff;"><strong>Patel Steel And Tubes Private Limited</strong></h2>
-              <p>
-                No. 33 SF, 36/1 36/2 <br>
-                Abhishek Complex GIDC, Vadsar Road, Makarpura GIDC<br>
-                Vadodara, Gujarat, India - 390010 <br>
-                <b>GSTIN : 24AAPCP4385F1Z4</b>
-              </p>
-            </div>
-          </div>
+						<div class="mb-3">
+							<label>Name</label>
+							<input class="form-control" type="text" name="name" required>
+						</div>
 
-          <!-- Contact + Menu + Social Section -->
-          <div class="col-md-9">
-            <div class="main-icon-last">
-              <div class="social-icon-app">
-                <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
-                  <li><a href="#"><img src="images/3_1.png" alt=""></a></li>
-                  <li><a href="#"><img src="images/4_1.png" alt=""></a></li>
-                  <li><a href="#"><img src="images/1_1.png" alt=""></a></li>
-                  <li><a href="#"><img src="images/2_1.png" alt=""></a></li>
-                  <li><a href="#"><img src="images/twitter-icon.png" alt=""></a></li>
-                </ul>
+						<div class="mb-3">
+							<label>Email</label>
+							<input class="form-control" type="email" name="email" required>
+						</div>
 
-                <!-- Email and Phone -->
-                <ul style="list-style: none; padding: 0; margin-top: 20px;">
-                  <li>
-                    <div class="image-icons" style="display: flex; align-items: center; gap: 10px;">
-                      <img src="images/Layer%2016.png" alt="">
-                      <a href="mailto:pstpl@gmail.com" style="color: #fff;">pstpl@gmail.com</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-icons" style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
-                      <img src="images/Layer%2017.png" alt="">
-                      <a href="tel:+919054805544" style="color: #fff;">+91 9054805544</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+						<div class="mb-3">
+							<label>Phone</label>
+							<input class="form-control" type="text" name="phone">
+						</div>
 
-              <!-- Navigation -->
-<nav style="margin-top: 30px;">
-                <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 20px;">
-                  <li><a href="index.html" style="color: #fff;">Home</a></li>
-<li><a href="aboutus.html" style="color: #fff;">About Us</a></li>
-<li><a href="global.html" style="color: #fff;">Global Presence</a></li>
-                  <li><a href="fittings.html" style="color: #fff;">Product</a></li>
-                  <li><a href="contactus.html" style="color: #fff;">Contact us</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+						<div class="mb-3">
+							<label>Message</label>
+							<textarea class="form-control" name="message" rows="5" required></textarea>
+						</div>
 
-  <!-- Copyright Section -->
-  <div class="footer-info" style="background-color: #111; padding: 20px 0; color: #ccc;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <p>&copy; 2023 Patel Steel and Tubes. All rights reserved.</p>
-        </div>
-        <div class="col-md-6 col-sm-6 text-end">
-          <p class="maintained">Developed & Maintained by <i>Bhavana B Choudhary</i></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- #page -->
-<div id="totop"><span><i class="fa fa-angle-up"></i></span></div>
-<script type="text/javascript">
-   $(window).scroll(function () {
-         if ($(window).scrollTop() > 10) {
-             $('#totop').stop(true, false).animate({'opacity': '1', 'right':'30'}, 500);
-         } else {
-             $('#totop').stop(true, false).animate({'opacity': '0', 'right':'-60'}, 500);
-         }
-     });
-   
-     $('#totop').click(function () {
-         $('html, body').animate({scrollTop: 0}, 800);
-         return false;
-     });
-</script>
-<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
-<!-- 	<script type="text/javascript">
-   $(document).ready(function(){   
-           window.setTimeout('fadeout();', 3000);
-           
-       });
-   
-       function fadeout(){
-           $('.preloader').delay(2000).fadeOut('slow', function() {
-              $('.txt').removeClass('txt');
-           });
-       }
-   
-   
-   
-   
-   </script> -->
-                    <script type="text/javascript">
-                                            
-                                            </script>
-                    
-
-<script>
-(function($) {
-    "use strict";
-    jQuery(document).ready(function($) {
-        
-
-    });
-}(jQuery));
-</script>
-
-<style>
-#ascrail2000 {
-    z-index: 999 !important;
-}
-</style>
-
-			<div class="wprm-wrapper">
-        
-        <!-- Overlay Starts here -->
-			 			   <div class="wprm-overlay"></div>
-			         <!-- Overlay Ends here -->
-			
-			         <div id="wprmenu_bar" class="wprmenu_bar bodyslide left">
-  <div class="hamburger hamburger--slider">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </div>
-  <div class="menu_title">
-      <a href="index.html">
-      MENU    </a>
-      </div>
-</div>			 
-			<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left default " id="mg-wprm-wrap">
-				
-				
-<ul id="wprmenu_menu_ul">
-  <li class="menu-item menu-item-has-children">
-    <a href="#">About Us</a>
-    <ul class="sub-menu">
-      <li class="menu-item"><a href="aboutus.html">Company</a></li>
-<li class="menu-item"><a href="global.html">Global Presence</a></li>
-            </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-            <a href="#">Products</a>
-            <ul class="sub-menu">
-                <li class="menu-item"><a href="fittings.html">Steel Fittings and Pipes</a></li>
-                <li class="menu-item"><a href="heat-exchanger.html">Stainless Steel Tubes</a></li>
-                <li class="menu-item"><a href="hydraulic-tubes.html">Stainless Steel Hydraulic Tubes</a></li>
-<li class="menu-item"><a href="seamless-pipes.html">Stainless Steel Seamless Pipes</a></li>
-<li class="menu-item"><a href="welded-pipes.html">Stainless Steel Welded Pipes</a></li>
-<li class="menu-item"><a href="lsaw.html">Stainless Steel LSAW Pipes</a></li>
-<!-- <li class="menu-item"><a href="#">Process Flowchart</a></li>
-<li class="menu-item"><a href="#">Packaging</a></li> -->
-            </ul>
-  </li>
-  <li class="menu-item">
-    <a href="contactus.html">Contact Us</a>
-  </li>
-</ul>
-				
+						<button class="btn btn-primary" type="submit">Submit</button>
+					</form>
 				</div>
 			</div>
-						<script type="text/javascript">
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-						entries.forEach( ( entry ) => {
-							if ( entry.isIntersecting ) {
-								let lazyloadBackground = entry.target;
-								if( lazyloadBackground ) {
-									lazyloadBackground.classList.add( 'e-lazyloaded' );
-								}
-								lazyloadBackgroundObserver.unobserve( entry.target );
-							}
-						});
-					}, { rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-						lazyloadBackgroundObserver.observe( lazyloadBackground );
-					} );
-				};
-				const events = [
-					'DOMContentLoaded',
-					'elementor/lazyload/observe',
-				];
-				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
-				} );
-			</script>
-			<link rel="stylesheet" id="whp8081tw-bs4.css-css" href="css/tw-bs4.css" media="all">
-<link rel="stylesheet" id="whp4244font-awesome.min.css-css" href="css/font-awesome.min_1.css" media="all">
-<link rel="stylesheet" id="whp4387front.css-css" href="css/front.css" media="all">
-<script src="js/hooks.min.js" id="wp-hooks-js"></script>
-<script src="js/i18n.min.js" id="wp-i18n-js"></script>
-<script id="wp-i18n-js-after">
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-</script>
-<script src="js/index.js" id="swv-js"></script>
-<script id="contact-form-7-js-extra">
-var wpcf7 = {"api":{"root":"https:\/\/www.venuspipes.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
-</script>
-<script src="js/index_1.js" id="contact-form-7-js"></script>
-<script id="wpm-switcher-block-script-js-extra">
-var wpm_localize_data = {"wpm_block_switch_nonce":"9066b49c15","ajax_url":"https:\/\/www.venuspipes.com\/wp-admin\/admin-ajax.php","current_url":"https:\/\/www.venuspipes.com\/"};
-</script>
-<script src="js/switcher-block.min.js" id="wpm-switcher-block-script-js"></script>
-<script src="js/navigation.js" id="venus-pipes-navigation-js"></script>
-<script id="bellows-js-extra">
-var bellows_data = {"config":{"main":{"folding":"multiple","current":"off","slide_speed":400}},"v":"1.3"};
-</script>
-<script src="js/bellows.min.js" id="bellows-js"></script>
 
-</body></html>
+			<!-- Contact Info -->
+			<div class="col-md-6">
+				<h3>Reach Us</h3>
+
+				<p><strong>Patel Enterprises</strong></p>
+
+				<p>Near Ayyappa Swami Temple, D Cross Main Road,<br>
+				Doddaballapura, Bangalore 561203</p>
+
+				<p><strong>Phone:</strong> <a href="tel:9739999023">9739999023</a></p>
+
+				<p><strong>Email:</strong> <a href="mailto:patelenterprises023@gmail.com">patelenterprises023@gmail.com</a></p>
+
+				<!-- Google Map -->
+				<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.455161020936!2d77.5180879!3d13.2913721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1e61a2f2dcd71%3A0x7e50d889f1bfe63f!2sDoddaballapura%2C%20Karnataka%20561203!5e0!3m2!1sen!2sin!4v1700000000000"
+  width="100%"
+  height="400"
+  style="border:0; border-radius:8px;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- FOOTER (UNCHANGED) -->
+<footer id="colophon" class="site-footer" style="background:#000;color:#fff;padding:40px 0;">
+	<div class="site-info">
+		<div class="footer-one">
+			<div class="container text-center">
+				<h1 style="color:#fff;">Get in touch with us by filling up the form or email us at
+					<a class="request" href="contactus.html" style="color:#00aced;text-decoration:underline;">Contact Us</a></h1>
+			</div>
+		</div>
+
+		<div class="footer-two">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-3">
+						<div class="Address">
+							<h6 style="color:#ccc;">REGISTERED OFFICE</h6>
+							<h2 style="color:#fff;"><strong>Patel Enterprises</strong></h2>
+							<p>Near ayyappa swami temple d cross Main Road<br>
+							DODDABALLAPURA, Bangalore 561203<br>
+							<b>GSTIN : 29BYOPR2746F1ZV</b></p>
+						</div>
+					</div>
+
+					<div class="col-md-9">
+						<div class="main-icon-last">
+
+							<!-- Contact footer icons -->
+							<ul style="list-style:none;display:flex;gap:10px;">
+								<li><a href="#"><img src="images/3_1.png"></a></li>
+								<li><a href="#"><img src="images/4_1.png"></a></li>
+								<li><a href="#"><img src="images/1_1.png"></a></li>
+								<li><a href="#"><img src="images/2_1.png"></a></li>
+								<li><a href="#"><img src="images/twitter-icon.png"></a></li>
+							</ul>
+
+							<ul style="list-style:none;margin-top:20px;">
+								<li><div class="image-icons"><img src="images/Layer 16.png"><a href="mailto:patelenterprises023@gmail.com">patelenterprises023@gmail.com</a></div></li>
+								<li><div class="image-icons"><img src="images/Layer 17.png"><a href="tel:+919739999023">+91 9739999023</a></div></li>
+							</ul>
+
+							<nav style="margin-top:30px;">
+								<ul style="list-style:none;display:flex;gap:20px;">
+									<li><a href="index.html" style="color:#fff;">Home</a></li>
+									<li><a href="aboutus.html" style="color:#fff;">About Us</a></li>
+									<li><a href="global.html" style="color:#fff;">Global Presence</a></li>
+									<li><a href="fittings.html" style="color:#fff;">Product</a></li>
+									<li><a href="contactus.html" style="color:#fff;">Contact us</a></li>
+								</ul>
+							</nav>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer-info" style="background:#111;padding:20px 0;color:#ccc;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">&copy; 2023 Patel Steel and Tubes. All rights reserved.</div>
+				<div class="col-md-6 text-end">Developed & Maintained by <i>Bhavana B Choudhary</i></div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+	e.preventDefault();
+	var form = this;
+
+	fetch(form.action, {
+		method: "POST",
+		body: new FormData(form),
+		headers: { 'Accept': 'application/json' }
+	}).then(() => {
+		document.getElementById("successPopup").style.display = "block";
+		form.reset();
+		setTimeout(() => { document.getElementById("successPopup").style.display = "none"; }, 3000);
+	});
+});
+</script>
+
+</body>
+</html>
